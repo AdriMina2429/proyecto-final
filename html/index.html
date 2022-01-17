@@ -7,8 +7,37 @@
     <title>Mi red Social</title>
     <link rel="stylesheet" href="css/estilo1.css">
 </head>
+
 <body>
-    <h1>OPEN MIND</h1>
+    <div id="login-container">
+        <h2>Iniciar Sesión</h2>
+        <input type="email" id="mail">
+        <input type="password" id="pass">
+        <button id="btn-login">Entrar con correo</button>
+        <button id="btn-login-google">Entrar con google</button>
+        <button id="btn-login-facebook">Entrar con facebook</button>
+        <button id="btn-register">Registrarme</button>
+    </div>
+
+    <div id="registro">
+        <h2>Crear Cuenta</h2>
+        <input type="email" id="mail-new">
+        <input type="password" id="pass-new">
+        <button id="btn-singup">Crear cuenta</button>
+    </div>
+
+    <div id="content">
+        
+        <div>
+            <button id="btn-logout">Cerrar Sesión</button>
+        </div>
+    </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+ 
 <script src="js/script.js"></script>
 </html>
