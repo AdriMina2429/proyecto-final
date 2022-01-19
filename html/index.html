@@ -74,10 +74,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
- 
-<script src="js/script.js"></script>
+  <!-- CDN Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <!-- CDN Authentication Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <!-- CDN Firestore Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+ <script>
+   const firebaseConfig = {
+     apiKey: "AIzaSyAJ7-8Xka7KJC1td3S8847y62evPj-2LNA",
+     authDomain: "proyecto-pancho-chancho-prueba.firebaseapp.com",
+     projectId: "proyecto-pancho-chancho-prueba",
+     storageBucket: "proyecto-pancho-chancho-prueba.appspot.com",
+     messagingSenderId: "144688252808",
+     appId: "1:144688252808:web:f2b71d17dec2d211685c3d",
+     measurementId: "G-29VPCXCKR7"
+   };
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+ </script>
+<script src="../js/script.js" ></script>
 </html>
