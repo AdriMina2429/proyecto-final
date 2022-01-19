@@ -16,19 +16,20 @@
     <div class="container-fluid">
       <a class="navbar-brand">OPEN MIND</a>
       <div>
-        <button id="logout" class="btn btn-success" style="display: block;">Salir</button>
+        <button id="logout" class="btn btn-success" style="display: none;">Salir</button>
       </div>
     </div>
   </nav>
 
     <div id="login-container"  class="card " style="width: 250px; text-align: center; margin: auto;">
         <div class="card-body">
-          
-          <p class="card-text">
-            <input type="email" id="mail" class="m-1" placeholder="correo electronico">
-            <input type="password" id="pass" class="m-1" placeholder="contraseña">
-          </p>
-          <button id="btn-login" href="#" class="btn btn-primary">entrar con correo</button>
+          <form id="ingreso-formulario">
+            <p class="card-text">
+              <input type="email" id="mail" class="m-1" placeholder="correo electronico">
+              <input type="password" id="pass" class="m-1" placeholder="contraseña">
+            </p>
+            <button type="submit" id="btn-login" href="#" class="btn btn-primary">entrar con correo</button>
+          </form>
           <button id="btn-login-google" href="#" class="btn btn-secundary">entrar con google</button>
           <a href="#!" id="btn-register" data-toggle="modal" class="btn btn-success" data-target="#registro" >Registrarme</a>
         </div>
@@ -83,16 +84,18 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
  <script>
    const firebaseConfig = {
-     apiKey: "AIzaSyAJ7-8Xka7KJC1td3S8847y62evPj-2LNA",
-     authDomain: "proyecto-pancho-chancho-prueba.firebaseapp.com",
-     projectId: "proyecto-pancho-chancho-prueba",
-     storageBucket: "proyecto-pancho-chancho-prueba.appspot.com",
-     messagingSenderId: "144688252808",
-     appId: "1:144688252808:web:f2b71d17dec2d211685c3d",
-     measurementId: "G-29VPCXCKR7"
+    apiKey: "AIzaSyBYnq1DDJBF71i6rOORP-UIkytWCyDNz-U",
+    authDomain: "proyecto-final-db1ad.firebaseapp.com",
+    projectId: "proyecto-final-db1ad",
+    storageBucket: "proyecto-final-db1ad.appspot.com",
+    messagingSenderId: "328779684923",
+    appId: "1:328779684923:web:a876e4c5f51813f382101e",
+    measurementId: "G-HGXZL79BDP"
    };
    // Initialize Firebase
-   const app = initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const fs = firebase.firestore();
  </script>
 <script src="../js/script.js" ></script>
 </html>
