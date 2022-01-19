@@ -48,4 +48,13 @@ auth.onAuthStateChanged((user) => {
     }
   });
 
+//Salir
+
+logout.addEventListener("click", (e) => {
+  e.preventDefault();
+  auth.signOut().then(() => {
+    console.log("salistes de tu cuenta");
+  });
+});
+
   
