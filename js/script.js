@@ -32,6 +32,24 @@ ingresoformulario.addEventListener("submit", (e) => {
       console.log("logeado");
     });
   });
+  // Login with Google
+const googleButton = document.querySelector("#btn-login-google");
+
+googleButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  ingresoformulario.reset();
+
+
+  const provider = new firebase.auth.GoogleAuthProvider();
+  auth.signInWithPopup(provider).then((result) => {
+    console.log(result);
+    console.log("Iniciado con tu cuenta Google");
+  })
+  .catch(err => {
+    console.log(err);
+  })
+});
+
   // evento: cambio de estado de autentificacion
   const btnSalir =document.querySelector("#logout");
 auth.onAuthStateChanged((user) => {
