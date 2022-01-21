@@ -30,6 +30,8 @@ ingresoformulario.addEventListener("submit", (e) => {
       // clear the form
       ingresoformulario.reset();
       console.log("logeado");
+      window.location.href = "./contenido2.html";
+
     });
   });
   // Login with Google
@@ -44,6 +46,8 @@ googleButton.addEventListener("click", (e) => {
   auth.signInWithPopup(provider).then((result) => {
     console.log(result);
     console.log("Iniciado con tu cuenta Google");
+    window.location.href = "./contenido2.html";
+
   })
   .catch(err => {
     console.log(err);
