@@ -1,3 +1,18 @@
+
+   const firebaseConfig = {
+    apiKey: "AIzaSyBYnq1DDJBF71i6rOORP-UIkytWCyDNz-U",
+    authDomain: "proyecto-final-db1ad.firebaseapp.com",
+    projectId: "proyecto-final-db1ad",
+    storageBucket: "proyecto-final-db1ad.appspot.com",
+    messagingSenderId: "328779684923",
+    appId: "1:328779684923:web:a876e4c5f51813f382101e",
+    measurementId: "G-HGXZL79BDP"
+   };
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const fs = firebase.firestore();
+ 
 const registroformulario= document.querySelector("#registro-formulario");
 const ingresoformulario= document.querySelector("#ingreso-formulario");
 
