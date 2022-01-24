@@ -1,12 +1,12 @@
 
    const firebaseConfig = {
-    apiKey: "AIzaSyBYnq1DDJBF71i6rOORP-UIkytWCyDNz-U",
-    authDomain: "proyecto-final-db1ad.firebaseapp.com",
-    projectId: "proyecto-final-db1ad",
-    storageBucket: "proyecto-final-db1ad.appspot.com",
-    messagingSenderId: "328779684923",
-    appId: "1:328779684923:web:a876e4c5f51813f382101e",
-    measurementId: "G-HGXZL79BDP"
+    apiKey: "AIzaSyAJ7-8Xka7KJC1td3S8847y62evPj-2LNA",
+    authDomain: "proyecto-pancho-chancho-prueba.firebaseapp.com",
+    projectId: "proyecto-pancho-chancho-prueba",
+    storageBucket: "proyecto-pancho-chancho-prueba.appspot.com",
+    messagingSenderId: "144688252808",
+    appId: "1:144688252808:web:f2b71d17dec2d211685c3d",
+    measurementId: "G-29VPCXCKR7"
    };
    // Initialize Firebase
    firebase.initializeApp(firebaseConfig);
@@ -93,5 +93,30 @@ logout.addEventListener("click", (e) => {
     console.log("salistes de tu cuenta");
   });
 });
+
+//Operaciones con POST
+//Definicion de Constantes
+const post = firebase.firestore();
+const post_Form = document.getElementById('postForm');
+const PostList = document.getElementById('postList');
+
+
+// Al enviar el Post con el boton Postear
+post_Form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const mensaje = post_Form['postText'];
+  await savePost(mensaje.value);
+  console.log("Post Guardado")
+  post_Form.reset();
+  mensaje.focus();
+
+});
+
+// Guardar post
+const savePost = (mensaje) =>
+  post.collection("posts").add({
+    description: mensaje,
+  });
 
   

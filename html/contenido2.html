@@ -56,11 +56,14 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      
+      <div id="postList"> </div>
 <br>
     <div>
+      <form id="postForm">
+
+      
       <p class="text-info">Comentanos tu estado de hoy</p>
-        <input type="text" class="publicar-emocion">
+        <input type="textarea" cols = "30" rows = "3" name = "postText"  id = "postText" class="publicar-emocion">
         <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           opciones
@@ -68,6 +71,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a class="dropdown-item" href="#">Editar</a>
           <a class="dropdown-item" href="#"> Eliminar</a>
+      </form>
     </div>
     <div>
       <p class="text-success">¡Escribe tus mejores consejos!
@@ -101,5 +105,5 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <!-- CDN FireDataBase Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-<script src="../js/script.js" ></script>
+<script src="../js/script2.js" ></script>
 </html>
