@@ -30,7 +30,7 @@
           </ul>
         </div>
       </nav>
-      <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide; mx-auto d-block" data-ride="carousel" style="width: 500px;">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -61,6 +61,7 @@
     <div>
       <p class="text-info">Comentanos tu estado de hoy</p>
         <input type="text" class="publicar-emocion">
+        <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           opciones
         </button>
@@ -72,6 +73,7 @@
       <p class="text-success">¡Escribe tus mejores consejos!
       </p>
         <input type="text" class="publicar-consejo">
+        <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
         <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          opciones
         </button>
