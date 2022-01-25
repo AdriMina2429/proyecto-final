@@ -8,3 +8,15 @@ carousel {
     height:640px;
     width: 320px; 
  }
+
+.navbar-nav{
+     background-color: rgb(208, 186, 228);
+     color: black;
+ }
+.navbar-brand{
+    background-color: rgb(208, 186, 228);
+}
+.navbar-navbar-expand-lg-navbar-light-bg-light{
+    background-color: rgb(208, 186, 228) ;
+}
+
