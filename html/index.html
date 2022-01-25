@@ -8,32 +8,31 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
   integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/estilo1.css">
+  <link rel="stylesheet" href="../css/stilo1.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar">
     <div class="container-fluid">
       <a class="navbar-brand">OPEN MIND</a>
-      <div>
-        <button id="logout" class="btn btn-success" style="display: none;">Salir</button>
-      </div>
     </div>
   </nav>
 
-    <div id="login-container"  class="card " style="width: 250px; text-align: center; margin: auto;">
+  <div class="m-0  vh-100 row justify-content-center">
+    <div id="login-container"  class="card " style="width: 300px; text-align: center; margin: auto;">
         <div class="card-body">
           <form id="ingreso-formulario">
             <p class="card-text">
-              <input type="email" id="mail" class="m-1" placeholder="correo electronico">
-              <input type="password" id="pass" class="m-1" placeholder="contraseña">
+              <input type="email" id="mail" class="m-3" placeholder="correo electronico" style=>
+              <input type="password" id="pass" class="m-3" placeholder="contraseña">
             </p>
-            <button type="submit" id="btn-login" href="#" class="btn btn-primary">entrar con correo</button>
+            <button type="submit" id="btn-login" href="#" class="btn btn-dark m-3">ingresar</button>
           </form>
-          <button id="btn-login-google" href="#" class="btn btn-secundary">entrar con google</button>
-          <a href="#!" id="btn-register" data-toggle="modal" class="btn btn-success" data-target="#registro" >Registrarme</a>
+          <button id="btn-login-google" href="#" class="btn btn-light m-3">entrar con google</button>
+          <a href="#!" id="btn-register" data-toggle="modal" class="btn btn-dark m-4" data-target="#registro" >Registrarme</a>
         </div>
-      </div>
+    </div>
+  </div>
     
       <div class="modal fade" id="registro" tabindex="-1" role="dialog"
       aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -53,7 +52,7 @@
               <div class="form-group">
                 <input type="password" id="pass-new" class="form-control" placeholder="Contraseña" required>
               </div>
-              <button type="submit" id="btn-singup" class="btn btn-primary">Crear cuenta</button>
+              <button type="submit" id="btn-singup" class="btn btn-dark">Crear cuenta</button>
             </form>
           </div>
         </div>

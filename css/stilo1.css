@@ -1,0 +1,17 @@
+.navbar{
+    background-color: lightpink;
+}
+
+body{
+    background-image: url(https://www.bing.com/images/blob?bcid=TvBauxrDtL0Drw)
+}
+
+.card {
+    background-color: lightpink;
+    border-radius: 15px;
+    box-shadow: black;
+}
+
+.modal-header {
+    background-color: orchid;
+}
