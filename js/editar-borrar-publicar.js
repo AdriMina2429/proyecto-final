@@ -97,9 +97,9 @@ logout.addEventListener("click", (e) => {
 //Inicializar servicio de la bd Firestore
 const db = firebase.firestore();
 //Publicar un nuevo estado
-$("#publicar-emocion").click(function(e){
+$("#btnSendPost").click(function(e){
     e.preventDefault();
-    let postText = $("#status-text").val();
+    let postText = $("#postText").val();
     let date = new Date();
     db.collection("posts").add({
         post: postText,
@@ -136,8 +136,8 @@ function listPosts(data){
                     <textarea style='display: none;'></textarea>
                     <button data-id="${document.id}" style='display: none;'>Guardar</button>
                     <span>Publicado el: ${doc.day}/${doc.month}/${doc.year}</span>
-                    <button data-id="${document.id}" class="btn btn-warning btn-edit-post">Editar</button>
-                    <button data-id="${document.id}" class="btn btn-danger btn-delete-post">Eliminar</button>
+                    <button data-id="${document.id}" class="btn btn-warning edit">Editar</button>
+                    <button data-id="${document.id}" class="btn btn-danger delete">Eliminar</button>
                 </div>
                 <hr>
             `;
@@ -145,14 +145,14 @@ function listPosts(data){
         });
         divContent.append(content);
         //Agregar listener a btn-delete
-        const btnDelete = document.querySelectorAll(".btn-delete-post");
+        const btnDelete = document.querySelectorAll(".delete");
         btnDelete.forEach(btn=>{
             btn.addEventListener("click",(e)=>{
                 const id = e.target.dataset.id;
                 DeletePost(id);
             })
         })
-        const btnEdit = document.querySelectorAll(".btn-edit-post");
+        const btnEdit = document.querySelectorAll(".edit");
         btnEdit.forEach(btn=>{
             btn.addEventListener("click",(e)=>{
                 const id = e.target.dataset.id;
