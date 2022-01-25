@@ -17,7 +17,7 @@ const registroformulario= document.querySelector("#registro-formulario");
 const ingresoformulario= document.querySelector("#ingreso-formulario");
 
 //registro
-registroformulario.addEventListener("submit", (e) => {
+registroformulario.addEventListener ("submit", (e) => {
     e.preventDefault();
     const email = registroformulario["mail-new"].value;
     const password = registroformulario["pass-new"].value;

@@ -29,9 +29,11 @@
             </li>
           </ul>
         </div>
+        <div>
+          <button id="logout" class="btn btn-success">Salir</button>
+        </div>
       </nav>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide; mx-auto d-block" data-ride="carousel" style="width: 500px;">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -39,13 +41,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="..." alt="First slide">
+            <img class="d-block w-100" src="https://static-cse.canva.com/blob/218511/Danzae-Pace.png" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Second slide">
+            <img class="d-block w-100" src="https://blog.hubspot.es/hubfs/media/frasesventasmandino.png" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="..." alt="Third slide">
+            <img class="d-block w-100" src="https://crehana-blog.imgix.net/media/filer_public/8a/05/8a05e44b-ef0c-44f2-9b7c-30942a3b7a67/crehana-alan-cohen-frases-inteligencia-emocional.png?auto=format&q=50" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,12 +59,45 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+      <div id="postList"> </div>
 <br>
+    <div>
+      <form id="postForm">
+
+      
+      <p class="text-info">Comentanos tu estado de hoy</p>
+        <input type="textarea" cols = "30" rows = "3" name = "postText"  id = "postText" class="publicar-emocion">
+        <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          opciones
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#" id="edit">Editar</a>
+          <a class="dropdown-item" href="#" id="delete"> Eliminar</a>
+      </form>
+    </div>
+    <div>
+      <p class="text-success">¡Escribe tus mejores consejos!
+      </p>
+        <input type="text" id="postText2" class="publicar-consejo">
+        <button id="btnSendPost2" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         opciones
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#" id="edit2">Editar</a>
+          <a class="dropdown-item" href="#" id="delete2">Eliminar</a>
+    </div>
     <div id="post-feed">
       <div>
-        <input type="text" id="" class="publicar-emocion">
-        <button id="btn-publish">Publicar</button>
-    </div>
+        <ul>
+          <li>Monge Jhemily</li>
+          <li>Dominguez Alanis</li>
+          <li>Vega Adriana</li>
+          <li>Pacheco Bella</li>
+        </ul>
+      </div>
+        
     </div>
   </div>
 </body>
@@ -81,5 +116,5 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 <!-- CDN FireDataBase Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-<script src="../js/script.js" ></script>
+<script src="../js/editar-borrar-publicar.js" ></script>
 </html>
