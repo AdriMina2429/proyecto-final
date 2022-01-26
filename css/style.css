@@ -1,12 +1,10 @@
 
-<<<<<<< HEAD
-=======
-}
+
 .carousel { 
     height:440px;
     width: 320px; 
     
- }
+}
 
 .fondo{
     background-image: url(https://th.bing.com/th/id/OIP.Et7Ys3bHCZKpZlJBbntkIQHaHa?pid=ImgDet&w=193&h=193&c=7);
@@ -25,4 +23,3 @@
     border-radius: 15px;
     box-shadow: rgb(193, 149, 214);
 }
->>>>>>> 56f8dd20beef07d36441d30666920fa1d52dbd38
