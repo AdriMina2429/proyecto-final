@@ -1,1 +1,28 @@
 
+<<<<<<< HEAD
+=======
+}
+.carousel { 
+    height:440px;
+    width: 320px; 
+    
+ }
+
+.fondo{
+    background-image: url(https://th.bing.com/th/id/OIP.Et7Ys3bHCZKpZlJBbntkIQHaHa?pid=ImgDet&w=193&h=193&c=7);
+}
+
+.publicacion1{
+    background-color: rgb(187, 216, 245);
+    border-radius: 15px;
+
+    box-shadow: rgb(131, 169, 206);
+}
+
+
+.publicacion2{
+    background-color: rgb(233, 184, 255);
+    border-radius: 15px;
+    box-shadow: rgb(193, 149, 214);
+}
+>>>>>>> 56f8dd20beef07d36441d30666920fa1d52dbd38
