@@ -4,19 +4,26 @@
     margin-left: 80px;
 
 }
-carousel { 
-    height:640px;
+.carousel { 
+    height:440px;
     width: 320px; 
+    
  }
 
-.navbar-nav{
-     background-color: rgb(208, 186, 228);
-     color: black;
- }
-.navbar-brand{
-    background-color: rgb(208, 186, 228);
-}
-.navbar-navbar-expand-lg-navbar-light-bg-light{
-    background-color: rgb(208, 186, 228) ;
+.fondo{
+    background-image: url(https://th.bing.com/th/id/OIP.Et7Ys3bHCZKpZlJBbntkIQHaHa?pid=ImgDet&w=193&h=193&c=7);
 }
 
+.publicacion1{
+    background-color: rgb(187, 216, 245);
+    border-radius: 15px;
+
+    box-shadow: rgb(131, 169, 206);
+}
+
+
+.publicacion2{
+    background-color: rgb(233, 184, 255);
+    border-radius: 15px;
+    box-shadow: rgb(193, 149, 214);
+}
