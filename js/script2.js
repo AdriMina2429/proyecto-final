@@ -54,11 +54,7 @@ const savePost = (mensaje) =>
 
     querySnapshot.forEach(doc => {
       
-<<<<<<< HEAD
-      const post = doc.data();
-=======
       const PostList = doc.data();
->>>>>>> funciones-de-botones
 
       PostList.innerHTML += `
         
@@ -78,8 +74,6 @@ const getPosts = ()=> post.collection('posts').get();
 
 // Cunado se obtienen las tareas
 //const onGetPosts = (callback)=> post.collection('posts').onSnapshot(callback);
-<<<<<<< HEAD
-=======
 //Inicializar servicio de la bd Firestore
 const db = firebase.firestore();
 //Publicar un nuevo estado
@@ -358,4 +352,5 @@ function SaveUpdate(e,id_post,text_new){
 
 
 
->>>>>>> funciones-de-botones
+
+
