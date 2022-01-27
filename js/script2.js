@@ -82,7 +82,7 @@ $("#btnSendPost").click(function(e){
     let postText = $("#postText").val();
     let date = new Date();
     db.collection("posts").add({
-        post: postText,
+        description: postText,
         day: date.getDate(),
         month: date.getMonth() + 1,
         year: date.getFullYear(),
@@ -207,7 +207,7 @@ post_Form2.addEventListener("submit", async (e) => {
 var date = new Date();
 const savePost2 = (mensaje) =>
   post.collection("posts2").add({
-    description: mensaje,
+    post: mensaje,
     day: date.getDate(),
     month: date.getMonth() + 1,
     year: date.getFullYear(),
@@ -230,7 +230,7 @@ const savePost2 = (mensaje) =>
       PostList2.innerHTML += `
         
         <div class="card card-body mt-2 border-primary">
-        <h5>${post.description}</h5>
+        <h5>${post.post}</h5>
         <div>
             <button class="btn btn-primary">Delete</button>
             <button class="btn btn-secundary">Editar</button>
@@ -270,8 +270,8 @@ $("#btnSendPost2").click(function(e){
 })
 
 function readPosts2(){
-    db2.collection("posts").get().then((posts)=>{
-        listPosts2(posts.docs);
+    db2.collection("posts2").get().then((posts2)=>{
+        listPosts2(posts2.docs);
     })
 }
 
@@ -338,7 +338,7 @@ function DeletePost2(id){
 
 function SaveUpdate(e,id_post,text_new){
     e.preventDefault();
-    db2.collection("posts").doc(id_post).update({
+    db2.collection("posts2").doc(id_post).update({
         post: text_new,
     }).then(()=>{
         alert("Post actualizado");
