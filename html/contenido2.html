@@ -75,35 +75,24 @@
         <p class="text-info">Comentanos tu estado de hoy</p>
         <input type="textarea" cols="30" rows="3" name="postText" id="postText" class="publicar-emocion">
         <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
-        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          opciones
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" id="edit">Editar</a>
-          <a class="dropdown-item" href="#" id="delete"> Eliminar</a>
-        </div>
+        <div id="post-feed"></div>
       </form>
     </div>
   </div>
-    <div class="publicacion2">
-      <div class="card2">
 
+
+    <div class="publicacion2" id="postList2">
+      <div>
+          <form id="postForm2">
         <p class="text-success">¡Escribe tus mejores consejos!
         </p>
         <input type="text" id="postText2" class="publicar-consejo">
         <button id="btnSendPost2" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
-        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          opciones
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#" id="edit2">Editar</a>
-          <a class="dropdown-item" href="#" id="delete2">Eliminar</a>
-        </div>
+        <div id="post-feed2"></div>
+         </form>
       </div>
     </div>
-    <footer id="post-feed">
+    <footer>
       © Todos los derechos reservados
       <ul>Monge Jhemily</ul>
       <ul>Dominguez Alanis</ul>
