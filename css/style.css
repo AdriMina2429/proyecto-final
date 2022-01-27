@@ -3,6 +3,7 @@
 .carousel { 
     height:440px;
     width: 320px; 
+    margin: 30px;
     
 }
 
@@ -12,14 +13,36 @@
 
 .publicacion1{
     background-color: rgb(187, 216, 245);
-    border-radius: 15px;
-
+    border-radius: 300px;
     box-shadow: rgb(131, 169, 206);
+    text-align: center;
+    border: black;
 }
-
-
+.card1{
+    border: black;
+    border-radius: 300px;
+    box-shadow: rgb(131, 169, 206);
+    margin: 30px;
+}
 .publicacion2{
     background-color: rgb(233, 184, 255);
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: rgb(193, 149, 214);
+    text-align: center;
+    border: black;
+}
+.card2{
+    border: black;
+    border-radius: 30px;
+    box-shadow: rgb(182, 204, 226);
+    text-align: center;
+    margin: 30px;
+    padding: 15px;
+    border-width: 15px;
+
+}
+footer{
+ text-align: center;
+ background-color:rgb(52, 49, 70) ;
+ color: rgb(255, 255, 255) ;
 }
