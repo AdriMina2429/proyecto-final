@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 # proyecto-final
 red social de ayuda emocional
 
@@ -50,4 +47,3 @@ Así que demoró unos 30 segundos para poder entrar
 
 -Ver el botón de salir: 
 Logro verlo en menos de 30 segundos.
->>>>>>> readme
