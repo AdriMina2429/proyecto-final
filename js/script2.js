@@ -113,7 +113,7 @@ function listPosts(data){
             let doc = document.data();
             const divPost = `
                 <div style='border:solid 2px;'>
-                    <p>${doc.post}</p><br>
+                    <p>${doc.description}</p><br>
                     <textarea style='display: none;'></textarea>
                     <button data-id="${document.id}" style='display: none;'>Guardar</button>
                     <span>Publicado el: ${doc.day}/${doc.month}/${doc.year}</span>
