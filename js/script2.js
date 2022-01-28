@@ -146,7 +146,11 @@ function OpenEdit2(id, button) {
 // Eliminar Estado
 function DeletePost(id) {
     db.collection("posts").doc(id).delete().then(() => {
-        alert("El Estado se ha eliminado correctamente");
+        const ms_eliminado = document.querySelector(".alert-secondary"); 
+        ms_eliminado.style.display ="block";
+        setTimeout(()=>{
+            ms_eliminado.style.display="none";
+        },3000);
         readPosts();
         // readPosts2();
     }).catch((error) => {
@@ -157,7 +161,11 @@ function DeletePost(id) {
 //Eliminar Consejo
 function DeletePost2(id) {
     db.collection("posts2").doc(id).delete().then(() => {
-        alert("El Consejo se ha eliminado correctamente");
+        const cn_eliminado = document.querySelector(".alert-warning"); 
+        cn_eliminado.style.display ="block";
+        setTimeout(()=>{
+            cn_eliminado.style.display="none";
+        },3000);
         //readPosts();
         readPosts2();
     }).catch((error) => {
