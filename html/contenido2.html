@@ -70,14 +70,15 @@
   <div style="display: none;" class="alert alert-warning" role="alert">
     El consejo se ha eliminado correctamente
   </div>
+  
   <div id="publicaciones">
   <div class="publicacion1">
     <div id="postList"> </div>
     <br>
     <div>
       <form id="postForm">
-        <p class="text-info">Comentanos tu estado de hoy</p>
-        <input type="textarea" cols="30" rows="3" name="postText" id="postText" class="publicar-emocion">
+        <p class="info">Comentanos tu estado de hoy</p>
+        <textarea id="postText" cols="30" rows="3"></textarea>
         <button id="btnSendPost" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
         <div id="post-feed"></div>
       </form>
@@ -88,9 +89,9 @@
     <div class="publicacion2" id="postList2">
       <div>
           <form id="postForm2">
-        <p class="text-success">¡Escribe tus mejores consejos!
+        <p class="success">¡Escribe tus mejores consejos!
         </p>
-        <input type="text" id="postText2" class="publicar-consejo">
+        <textarea id="postText2" cols="30" rows="3"></textarea>
         <button id="btnSendPost2" class="btn btn-outline-dark btn-lg px-5" type="submit">Postear</button>
         <div id="post-feed2"></div>
          </form>
