@@ -1,0 +1,7 @@
+body {
+    background-color: rgb(187, 216, 245);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+ }
