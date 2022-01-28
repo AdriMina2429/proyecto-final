@@ -335,7 +335,6 @@ function DeletePost2(id){
     });
 }
 
-
 function SaveUpdate(e,id_post,text_new){
     e.preventDefault();
     db2.collection("posts2").doc(id_post).update({
