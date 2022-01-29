@@ -179,7 +179,11 @@ function SaveUpdate(e, id_post, text_new) {
     db.collection("posts").doc(id_post).update({
         description: text_new,
     }).then(() => {
-        alert("Post actualizado");
+        const ms_editado = document.querySelector(".alert-danger"); 
+        ms_editado.style.display ="block";
+        setTimeout(()=>{
+            ms_editado.style.display="none";
+        },3000);
         readPosts();
     })
         .catch((error) => {
@@ -193,7 +197,11 @@ function SaveUpdate2(e, id_post, text_new) {
     db.collection("posts2").doc(id_post).update({
         post: text_new,
     }).then(() => {
-        alert("Post actualizado");
+        const cn_editado = document.querySelector(".alert-success"); 
+        cn_editado.style.display ="block";
+        setTimeout(()=>{
+            cn_editado.style.display="none";
+        },3000);
         readPosts2();
     })
         .catch((error) => {
@@ -224,7 +232,11 @@ $("#btnSendPost").click(function (e) {
         year: date.getFullYear(),
     })
         .then((docRef) => {
-            alert("Estado publicado");
+            const ms_publicado = document.querySelector(".alert-info"); 
+            ms_publicado.style.display ="block";
+            setTimeout(()=>{
+                ms_publicado.style.display="none";
+            },3000);
             $("#status-text").val('');
             readPosts();
         })
@@ -245,7 +257,11 @@ $("#btnSendPost2").click(function (e) {
         year: date.getFullYear(),
     })
         .then((docRef) => {
-            alert("Consejo publicado");
+            const cn_publicado = document.querySelector(".alert-dark"); 
+            cn_publicado.style.display ="block";
+            setTimeout(()=>{
+                cn_publicado.style.display="none";
+            },3000);
             $("#status-text2").val('');
             readPosts2();
         })
