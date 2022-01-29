@@ -47,3 +47,19 @@ Así que demoró unos 30 segundos para poder entrar
 
 -Ver el botón de salir: 
 Logro verlo en menos de 30 segundos.
+
+Segunda entrevista
+1. ¿Que te parece el inicio de esta red social?
+  - Ahora la veo mejor, mas seria, mas completa y cumple con lo que se necesita.
+
+  2. ¿Que opinas del proposito de esta pagina?
+  - Me parece bien que tengan en cuenta la salud mental de nosotros los jovenes. Está genial.
+
+  3. ¿Que opinas en general de nuestra red social?
+  - Creo que han mejorado muchisimo. Me gusta que sea anonima pero que a su vez no lo sientas así.
+  que te sientas acompañado a pesar de que los demas usuarios no sepan tu nombre es muy reconfortante.
+  Tambien creo que está perfecto que tengan un lado de "contactanos" así la gente puede
+  sentir mayor apoyo.
+
+  4. Si pudieras cambiar algo de la red social. ¿Que cambiarias?
+  - Ahora lo unico que se me ocurre es que la red social suba de nivel y tenga un formato mas social, con mensajes y esas cosas, pero fuera de eso no me cambiaria nada, cumple con su proposito y tiene pros muy interesantes
